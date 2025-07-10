@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const SizeGuide = () => {
 
@@ -115,14 +116,14 @@ const SizeGuide = () => {
                                                                 <div className="content-box">
                                                                     <h6 className="text-black">Whatsapp</h6>
                                                                     <img src="../public/assets/images/icons/Whatsapp.svg" className="d-block img-fluid mx-auto mb-3" alt="Whats App" />
-                                                                    <p><a href={`https://wa.me/+${contact_no}`} className="hidden-link">+{contact_no}</a></p>
+                                                                    <p><Link to={`https://wa.me/+${contact_no}`} className="hidden-link">+{contact_no}</Link></p>
                                                                 </div>
                                                             </div>
                                                             <div className="col-lg-4 col-md-6 col-6">
                                                                 <div className="content-box br-none">
                                                                     <h6 className="text-black">Email</h6>
                                                                     <img src="../public/assets/images/icons/Email.svg" className="d-block img-fluid mx-auto mb-3" alt="Whats App" />
-                                                                    <p><a href={`mailto:${email_address}`} className="hidden-link">{email_address}</a></p>
+                                                                    <p><Link to={`mailto:${email_address}`} className="hidden-link">{email_address}</Link></p>
                                                                 </div>
                                                             </div>
                                                         </div>

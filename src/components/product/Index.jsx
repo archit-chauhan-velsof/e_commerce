@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState ,lazy} from 'react'
 import axios from 'axios'
 import Breadcrumbs from './Breadcrumbs'
 import Footer from '../footer/Index'
@@ -6,11 +6,12 @@ import Header from '../header/Index'
 import ProductImages from './ProductImages'
 import ProductDetails from './ProductDetails'
 import SizeGuide from './SizeGuide'
-import SizeOptions from './SizeOptions'
+// import SizeOptions from './SizeOptions'
 import AddToBag from './AddToBag'
 import Accordions from './Accordions'
 import ShareProduct from './ShareProduct'
 
+const LazySizeOptions = lazy(() => import('./SizeOptions'));
 
 const Product = () => {
 
@@ -98,7 +99,7 @@ const Product = () => {
 								{/* ProductDetails */}
 								<ProductDetails designer={designer} productName={product_name} price={sizeOptionsDetails.price} discountPercentage={sizeOptionsDetails.discount_percentage} emiDetails={emi_details} discountPrice={sizeOptionsDetails.discount_price} />
 								{is_size_guide_available ? <SizeGuide /> : ""}
-								<SizeOptions sizeOptions={sizeOptions} setSizeOptionsDetails={setSizeOptionsDetails} product_id={product_id} />
+								<LazySizeOptions sizeOptions={sizeOptions} setSizeOptionsDetails={setSizeOptionsDetails} product_id={product_id} />
 								<AddToBag sizeOptionsDetails={sizeOptionsDetails} />
 								<Accordions description={description} otherDetails={accordionData} />
 								<ShareProduct />

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Breadcrumbs = ({breadcrumbData}) => {
     return (
@@ -11,7 +12,7 @@ const Breadcrumbs = ({breadcrumbData}) => {
                                 {
                                     breadcrumbData?.map((e)=>{
                                         return (
-                                            <li key={e.link}><a href={e.link} key={e.link}>{e.label}</a></li>
+                                            <li key={e.link}><Link to={e.link} key={e.link}>{e.label}</Link></li>
                                         )
                                     })
                                 }
