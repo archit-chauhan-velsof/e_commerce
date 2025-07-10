@@ -9,9 +9,9 @@ const Breadcrumbs = ({breadcrumbData}) => {
                         <div className="breadcrumb">
                             <ul>
                                 {
-                                    breadcrumbData?.map((e,index)=>{
+                                    breadcrumbData?.map((e)=>{
                                         return (
-                                            <li><a href={e.link} key={index}>{e.label}</a></li>
+                                            <li key={e.link}><a href={e.link} key={e.link}>{e.label}</a></li>
                                         )
                                     })
                                 }
