@@ -91,7 +91,7 @@ const Product = () => {
 							<ProductImages images={images} />
 							<div className="authentication-text mt-40 d-dsk">
 								<p className="text-black">Authenticated by:</p>
-								<img src="../public/assets/images/authenticated-img.png" alt="" className="d-block img-fluid" />
+								<img src="../assets/images/authenticated-img.png" alt="" className="d-block img-fluid" />
 							</div>
 						</div>
 						<div className="col-md-4">
@@ -118,7 +118,7 @@ const Product = () => {
 										</p>
 										<span className="text-black">Incl. GST & Duties, EMI starts @ <i className="fas fa-rupee-sign"></i> 498/month</span>
 										<div className="share-button">
-											<img src="../public/assets/images/icons/Share-Icon.png" alt="" className="img-fluid mx-auto d-block" />
+											<img src="../assets/images/icons/Share-Icon.png" alt="" className="img-fluid mx-auto d-block" />
 										</div>
 									</div>
 								</div>

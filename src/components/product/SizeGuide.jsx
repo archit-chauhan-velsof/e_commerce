@@ -42,7 +42,7 @@ const SizeGuide = () => {
                 <div className="center-box">
                     <div className="newsletter-heading">
                         <h3>SIZE GUIDE</h3>
-                        <button onClick={() => sizeGuideCloseFunction()} className="btn-blank"><img src="../public/assets/images/icons/Cross-Button.png" className="close-btn-newsletter" alt="" /></button>
+                        <button onClick={() => sizeGuideCloseFunction()} className="btn-blank"><img src="../assets/images/icons/Cross-Button.png" className="close-btn-newsletter" alt="" /></button>
                     </div>
                     <div className="newsletter-body">
                         <div className="product-info">
@@ -115,14 +115,14 @@ const SizeGuide = () => {
                                                             <div className="col-lg-4 col-md-6 col-6">
                                                                 <div className="content-box">
                                                                     <h6 className="text-black">Whatsapp</h6>
-                                                                    <img src="../public/assets/images/icons/Whatsapp.svg" className="d-block img-fluid mx-auto mb-3" alt="Whats App" />
+                                                                    <img src="../assets/images/icons/Whatsapp.svg" className="d-block img-fluid mx-auto mb-3" alt="Whats App" />
                                                                     <p><Link to={`https://wa.me/+${contact_no}`} className="hidden-link">+{contact_no}</Link></p>
                                                                 </div>
                                                             </div>
                                                             <div className="col-lg-4 col-md-6 col-6">
                                                                 <div className="content-box br-none">
                                                                     <h6 className="text-black">Email</h6>
-                                                                    <img src="../public/assets/images/icons/Email.svg" className="d-block img-fluid mx-auto mb-3" alt="Whats App" />
+                                                                    <img src="../assets/images/icons/Email.svg" className="d-block img-fluid mx-auto mb-3" alt="Whats App" />
                                                                     <p><Link to={`mailto:${email_address}`} className="hidden-link">{email_address}</Link></p>
                                                                 </div>
                                                             </div>
@@ -152,8 +152,8 @@ const SizeGuide = () => {
                 <div className="center-box">
                     <div className="newsletter-heading">
                         <h3>VIEW FULL SIZE GUIDE</h3>
-                        <button onClick={() => sizeGuideFullBackFunction()} className="btn-blank"><img src="../public/assets/images/icons/left-arrow-black.svg" className="back-btn-newsletter" alt="" /></button>
-                        <button onClick={() => sizeGuideFullCloseFunction()} className="btn-blank"><img src="../public/assets/images/icons/Cross-Button.png" className="close-btn-newsletter" alt="" /></button>
+                        <button onClick={() => sizeGuideFullBackFunction()} className="btn-blank"><img src="../assets/images/icons/left-arrow-black.svg" className="back-btn-newsletter" alt="" /></button>
+                        <button onClick={() => sizeGuideFullCloseFunction()} className="btn-blank"><img src="../assets/images/icons/Cross-Button.png" className="close-btn-newsletter" alt="" /></button>
                     </div>
                     <div className="newsletter-body">
                         <div className="accordion" id="sizeGuideFullMain">

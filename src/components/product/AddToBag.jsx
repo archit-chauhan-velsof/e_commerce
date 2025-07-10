@@ -28,7 +28,7 @@ const AddToBag = ({sizeOptionsDetails}) => {
     return (
         <div className="add-to-cart-btn mt-20">
             <button className="btn-primary" onClick={()=>addToBagHandler(sizeOptionsDetails)}>ADD TO BAG</button>
-            <button className="btn-blank"><img src="../public/assets/images/icons/wishlist.svg" className="img-fluid mx-auto d-block" /></button>
+            <button className="btn-blank"><img src="../assets/images/icons/wishlist.svg" className="img-fluid mx-auto d-block" /></button>
         </div>
     )
 }
