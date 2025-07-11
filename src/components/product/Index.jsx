@@ -10,6 +10,7 @@ import SizeGuide from './SizeGuide'
 import AddToBag from './AddToBag'
 import Accordions from './Accordions'
 import ShareProduct from './ShareProduct'
+import { axiosInstance } from '../../config'
 
 const LazySizeOptions = lazy(() => import('./SizeOptions'));
 
@@ -29,7 +30,7 @@ const Product = () => {
 		bodyFormData.append('device_is_mobile', 'false');
 		bodyFormData.append('product_id', '2539205');
 		bodyFormData.append('product_url', 'green-embroidered-logo-polo-2539205');
-		axios.post(`https://staging.darveys.com/index.php/mobileappbuilder/apicall/appGetProductDetails?version=1.11&SID=3qb9bv7i5mlfs589oja05k44u1&__store=default`, bodyFormData)
+		axiosInstance.post(`appGetProductDetails?version=1.11&SID=3qb9bv7i5mlfs589oja05k44u1&__store=default`, bodyFormData)
 			.then((res) => {
 				setProductData(res.data.product);
 				setSizeOptionsDetails({

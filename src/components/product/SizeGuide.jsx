@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import { axiosInstance } from '../../config';
 
 const SizeGuide = () => {
 
@@ -14,7 +15,7 @@ const SizeGuide = () => {
         bodyFormData.append('platform', 'web');
         bodyFormData.append('device_is_mobile', 'false');
         bodyFormData.append('product_id', '2539205');
-        axios.post(`https://staging.darveys.com/index.php/mobileappbuilder/apicall/appGetSizeChart?version=1.11&SID=3qb9bv7i5mlfs589oja05k44u1&__store=default`, bodyFormData)
+        axiosInstance.post(`appGetSizeChart?version=1.11&SID=3qb9bv7i5mlfs589oja05k44u1&__store=default`, bodyFormData)
             .then((res) => {
                 setSizeGuide(res.data);
                 // console.log(res.data);

@@ -4,8 +4,5 @@ export const baseUrl = " https://staging.darveys.com/index.php/mobileappbuilder/
 
 // axios instance 
 export const axiosInstance  = axios.create({
-    baseURL: baseUrl,
-    headers : {
-        'Content-Type': 'application/json'
-    }
+    baseURL: baseUrl
 })
